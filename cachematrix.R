@@ -21,6 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 cacheSolve <- function(x, ...) {
+
         ## Return a matrix that is the inverse of 'x'
   i<-x$getinverse()
   if(!is.null(i)){
@@ -31,4 +32,5 @@ cacheSolve <- function(x, ...) {
   i<-solve(data, ...)
   x$setinverse(i)
   i
+  
 }
